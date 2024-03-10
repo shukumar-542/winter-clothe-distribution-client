@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --primary-color: 197, 78%, 50%;
+    --btn-bg : 0, 0%, 95%;
+    --btn-text : 19, 93%, 46%;
+  }
+
+  
+  html {
+    font-family: "Poppins", sans-serif;
+  }
+}
