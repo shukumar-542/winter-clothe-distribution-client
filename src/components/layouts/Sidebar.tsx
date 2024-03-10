@@ -23,6 +23,10 @@ const Sidebar = () => {
                             <div className='size-1 rounded-md bg-primary-color'></div>
                             <span className="truncate">Post clothes</span>
                         </NavLink>
+                        <NavLink to='/dashboard/create-testimonial' className={({ isActive }) => `px-3 py-2 flex gap-2 items-center text-primary-color ${isActive ? 'text-primary-color bg-blue-100   shadow-sm' : ''}`}>
+                            <div className='size-1 rounded-md bg-primary-color'></div>
+                            <span className="truncate">Create Testimonial</span>
+                        </NavLink>
                     </ul>
                 </div>
             </div>

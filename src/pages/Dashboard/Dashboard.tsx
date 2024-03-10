@@ -27,27 +27,27 @@ const Dashboard = () => {
     const gloves = data?.filter((pro: productItem) => pro.category === 'gloves')
 
     const data01 = [
-        { name: 'Jacket', value: jacket.length | 1 },
-        { name: 'Sweeter', value: sweeter.length | 1},
-        { name: 'Gloves', value: gloves.length | 1 },
+        { name: 'Jacket', value: jacket?.length | 1 },
+        { name: 'Sweeter', value: sweeter?.length | 1},
+        { name: 'Gloves', value: gloves?.length | 1 },
     ];
     const colors = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042', 'red', 'pink'];
     const bardata = [
         {
             name: 'Sweeter',
-            uv: sweeter.length,
+            uv: sweeter?.length,
             pv: 10,
             amt: 10,
         },
         {
             name: 'Jacket',
-            uv: jacket.length,
+            uv: jacket?.length,
             pv: 10,
             amt: 10,
         },
         {
             name: 'Gloves',
-            uv: gloves.length,
+            uv: gloves?.length,
             pv: 10,
             amt: 90,
         }

@@ -11,6 +11,8 @@ import PostCloth from "../pages/Dashboard/PostCloth";
 import AllWinterClothes from "../pages/All_winter_clothes/AllWinterClothes";
 import ProtectedRoute from "../components/layouts/ProtectedRoute";
 import LeaderBoard from "../pages/LeaderBoard/LeaderBoard";
+import VolunteersHub from "../pages/Volunteers/VolunteersHub";
+import CreateTestimonial from "../pages/Dashboard/CreateTestmonial";
 
 const router = createBrowserRouter([
     {
@@ -32,6 +34,10 @@ const router = createBrowserRouter([
             {
                 path: '/leaderBoard',
                 element: <LeaderBoard />
+            },
+            {
+                path: '/volunteers',
+                element: <VolunteersHub />
             }
         ]
     },
@@ -50,6 +56,10 @@ const router = createBrowserRouter([
             {
                 path: 'create-winter-clothes',
                 element: <PostCloth />
+            },
+            {
+                path: 'create-testimonial',
+                element: <CreateTestimonial />
             }
         ]
     },
