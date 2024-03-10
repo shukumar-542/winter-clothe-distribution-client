@@ -46,6 +46,11 @@ const NavBar = () => {
                         user &&
                         <li onClick={handleLogout} className="cursor-pointer ">Logout</li>
                     }
+                    <li>
+                        <NavLink to="/leaderBoard">LeaderBoard</NavLink>
+                    </li>
+                    <li>Volunteers</li>
+                    <li>Community</li>
                     <li onClick={handleTheme} className="cursor-pointer">
                         {
                             darkMode ? <MdOutlineWbSunny /> :  <FaMoon />

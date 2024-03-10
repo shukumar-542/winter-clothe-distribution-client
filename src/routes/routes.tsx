@@ -10,6 +10,7 @@ import DashboardWinterClothes from "../pages/Dashboard/DashboardWinterClothes";
 import PostCloth from "../pages/Dashboard/PostCloth";
 import AllWinterClothes from "../pages/All_winter_clothes/AllWinterClothes";
 import ProtectedRoute from "../components/layouts/ProtectedRoute";
+import LeaderBoard from "../pages/LeaderBoard/LeaderBoard";
 
 const router = createBrowserRouter([
     {
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
             {
                 path: 'details/:id',
                 element: <ClothesDetails />
+            },
+            {
+                path: '/leaderBoard',
+                element: <LeaderBoard />
             }
         ]
     },
@@ -56,6 +61,9 @@ const router = createBrowserRouter([
         path: '/register',
         element: <Register />
     }
+    
+    
+  
 ])
 
 export default router

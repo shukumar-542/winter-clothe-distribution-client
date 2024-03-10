@@ -7,7 +7,7 @@ const Footer = () => {
     const {darkMode} = useAppSelector(store => store.theme);
 
     return (
-        <div className={` ${darkMode ? "bg-black" : "bg-primary-color" } " py-10"`}>
+        <div className={` ${darkMode ? "bg-black" : "bg-primary-color" } py-10`}>
             <Container >
                 <div className="grid grid-cols-2 lg:grid-cols-4 justify-items-center text-white">
 
