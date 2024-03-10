@@ -9,7 +9,6 @@ const Donors = () => {
     if (isLoading) {
         return <p>Loading..</p>
     }
-    console.log(data);
     return (
         <Container className="">
             <h1 className="font-semibold text-[20px] text-center mb-12 lg:text-[48px] uppercase mt-10">

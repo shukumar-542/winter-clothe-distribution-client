@@ -1,5 +1,7 @@
 import { useForm } from "react-hook-form";
 import { FaCircleXmark } from "react-icons/fa6";
+import { usePostDonorsTestimonialsMutation } from "../../redux/features/volunteersSlice/volunteersApi";
+import { toast } from "sonner";
 
 type MType = {
   onClose: () => void,
@@ -12,12 +14,23 @@ type SData = {
 }
 const TestimonialModal = ( {onClose} : MType  ) => {
   const { register, handleSubmit, reset } = useForm<SData>();
-  
-  const onSubmit = (data : SData) => {
-    console.log(data);
-    onClose()
-    reset()
-  }
+  const [postDonorsTestimonials] = usePostDonorsTestimonialsMutation();
+  const onSubmit = async(data : SData) => {
+    const toastId =  toast.loading('Testimonials added')
+    try {
+        const newTestmonials = {
+            ...data
+        }
+    
+        postDonorsTestimonials(newTestmonials)
+        toast.success('Testimonials added successfully',{id : toastId , duration : 2000})
+        onClose()
+        reset() 
+    } catch (error) {
+        toast.error('Something Went Wrong.',{id : toastId , duration : 2000})
+    }
+    
+  } 
   
   return (
     <div className="fixed top-0 left-0 w-screen h-screen z-50 bg-black/60 backdrop-blur-sm">

@@ -110,12 +110,12 @@
 //         "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum iure facere quos corporis ex vel sed laboriosam odit atque? Eum!",
 //         "img ": "https: //i.ibb.co/kSHWLGS/donor2.jpg"
 //     },
-//     {
-//         "name": "Silance Tokyo",
-//         "designation": "Chef Executive office",
-//         "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum iure facere quos corporis ex vel sed laboriosam odit atque? Eum!",
-//         "img ": "https: //i.ibb.co/pWFF3yC/donor5.jpg"
-//     },
+    {
+        "name": "Silance Tokyo",
+        "designation": "Chef Executive office",
+        "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum iure facere quos corporis ex vel sed laboriosam odit atque? Eum!",
+        "img ": "https: //i.ibb.co/pWFF3yC/donor5.jpg"
+    },
 //     {
 //         "name": "Silance Tokyo",
 //         "designation": "Chef Executive office",
