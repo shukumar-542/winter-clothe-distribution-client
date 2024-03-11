@@ -13,6 +13,7 @@ import ProtectedRoute from "../components/layouts/ProtectedRoute";
 import LeaderBoard from "../pages/LeaderBoard/LeaderBoard";
 import VolunteersHub from "../pages/Volunteers/VolunteersHub";
 import CreateTestimonial from "../pages/Dashboard/CreateTestmonial";
+import CreateVolunteers from "../pages/Volunteers/CreateVolunteers";
 
 const router = createBrowserRouter([
     {
@@ -38,7 +39,17 @@ const router = createBrowserRouter([
             {
                 path: '/volunteers',
                 element: <VolunteersHub />
-            }
+            },
+            {
+                path: '/volunteers',
+                element: <VolunteersHub />
+            },
+            {
+                path: '/create-volunteers',
+                element: <CreateVolunteers />
+            },
+            
+            
         ]
     },
     {

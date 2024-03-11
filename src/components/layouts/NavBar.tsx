@@ -50,7 +50,7 @@ const NavBar = () => {
                         <NavLink to="/leaderBoard">LeaderBoard</NavLink>
                     </li>
                     <li>
-                        <NavLink to="/volunteers">Volunteers</NavLink>
+                        <NavLink to="/volunteers">About us</NavLink>
                     </li>
                     <li>Community</li>
                     <li onClick={handleTheme} className="cursor-pointer">

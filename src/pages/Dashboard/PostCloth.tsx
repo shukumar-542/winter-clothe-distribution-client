@@ -15,7 +15,7 @@ type Inputs = {
 }
 
 const PostCloth = () => {
-    const { register, handleSubmit } = useForm<Inputs>();
+    const { register, handleSubmit, } = useForm<Inputs>();
     const user = useAppSelector(useCurrentUser);
     const navigate = useNavigate()
     const [postProduct] = usePostProductMutation()

@@ -12,8 +12,18 @@ const volunteersApi = baseApi.injectEndpoints({
                 method: "POST",
                 body: body
             })
-        })
+        }),
+        registerVolunteers : builder.mutation({
+            query: (body) => ({
+                url: '/volunteers',
+                method: "POST",
+                body: body
+            })
+        }),
+        getVolunteers: builder.query({
+            query: () => `/volunteers`
+        }),
     })
 })
 
-export const { useGetAllVolunteersQuery, usePostDonorsTestimonialsMutation } = volunteersApi
+export const { useGetAllVolunteersQuery, usePostDonorsTestimonialsMutation, useRegisterVolunteersMutation , useGetVolunteersQuery } = volunteersApi
