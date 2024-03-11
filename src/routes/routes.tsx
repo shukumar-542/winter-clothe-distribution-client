@@ -14,6 +14,7 @@ import LeaderBoard from "../pages/LeaderBoard/LeaderBoard";
 import VolunteersHub from "../pages/Volunteers/VolunteersHub";
 import CreateTestimonial from "../pages/Dashboard/CreateTestmonial";
 import CreateVolunteers from "../pages/Volunteers/CreateVolunteers";
+import Community from "../pages/Community/Community";
 
 const router = createBrowserRouter([
     {
@@ -47,6 +48,10 @@ const router = createBrowserRouter([
             {
                 path: '/create-volunteers',
                 element: <CreateVolunteers />
+            },
+            {
+                path: '/community',
+                element: <Community />
             },
             
             

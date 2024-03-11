@@ -19,7 +19,7 @@ const Donors = () => {
 
                     {
                         data?.map((donor : any) => (
-                            <div className="shadow-sm border-b  w-[300px] lg:w-[400px] ml-5">
+                            <div key={donor?._id} className="shadow-sm border-b  w-[300px] lg:w-[400px] ml-5">
                                 <img src={donor?.img} alt="" className="w-full h-[200px] rounded-sm" />
                                 <div className="p-2  ">
                                     <div className="flex justify-between mt-2">

@@ -14,7 +14,7 @@ const NavBar = () => {
     const handleLogout = () => {
         dispatch(logOut())
     }
-    const handleTheme =()=>{
+    const handleTheme = () => {
         console.log('click')
         dispatch(toggleTheme())
     }
@@ -52,12 +52,14 @@ const NavBar = () => {
                     <li>
                         <NavLink to="/volunteers">About us</NavLink>
                     </li>
-                    <li>Community</li>
+                    <li>
+                        <NavLink to="/community">Community</NavLink>
+                    </li>
                     <li onClick={handleTheme} className="cursor-pointer">
                         {
-                            darkMode ? <MdOutlineWbSunny /> :  <FaMoon />
+                            darkMode ? <MdOutlineWbSunny /> : <FaMoon />
                         }
-                        
+
                     </li>
                 </ul>
             </nav>
