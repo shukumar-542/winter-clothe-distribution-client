@@ -11,9 +11,9 @@ const Home = () => {
         <div>
             <HeroSection />
             <WinterClothes />
-            <Donors/>
+            <Donors />
             <Gallery />
-            <AboutUs/>
+            <AboutUs />
             <Volunteers />
             <Benificial />
         </div>
