@@ -34,6 +34,11 @@ These instructions will get you a copy of the project up and running on your loc
 - Unauthorized user can not access dashboard.
 - authorized used can be add their product and see their own dashboard with information.and they can be able to update and delete their product.
 -  user can be added a new product.
+- Enable users to switch between dark and light
+- Show leaderboard to showcase the top donors who have made significant contributions
+- community gratitude wall where users can post comments of appreciation for the support they've received during difficult times.
+- Donors will be able to post testimonials about the donation posts.
+- Implement volunteers users can provide their information like their email, phone number
 
 ## Technology Used  :
 
@@ -46,4 +51,4 @@ These instructions will get you a copy of the project up and running on your loc
 - Framer motion
 - sweetalert
 
-## Live Link : https://l2-b2-assignment-6-fronten-shukumar-542-pso9.vercel.app/
+## Live Link : https://winter-clothe-distribution-client-eight.vercel.app/
