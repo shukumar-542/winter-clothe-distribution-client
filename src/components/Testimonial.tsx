@@ -9,7 +9,7 @@ const Testimonial = ({testimonials} :any) => {
                 <img src={testimonials?.img} alt="" className="w-full h-[200px] rounded-sm" />
                 <div className="p-2  ">
                     <div className="flex justify-between mt-2">
-                        <h1 className="font-semibold">{testimonials.name}</h1>
+                        <h1 className="font-semibold">{testimonials?.name}</h1>
                         <div className="flex gap-2 text-gray-800">
                             <FaInstagram />
                             <FaFacebook />

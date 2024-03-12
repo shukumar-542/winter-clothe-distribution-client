@@ -3,7 +3,8 @@ import { baseApi } from "../../api/baseApi";
 const volunteersApi = baseApi.injectEndpoints({
     endpoints: (builder) => ({
         getAllVolunteers: builder.query({
-            query: () => `/donor-testimonial`
+            query: () => `/donor-testimonial`,
+            providesTags : ['donors']
         }),
         postDonorsTestimonials : builder.mutation({
             query: (body) => ({
@@ -11,7 +12,8 @@ const volunteersApi = baseApi.injectEndpoints({
                 url: '/donor-testimonial',
                 method: "POST",
                 body: body
-            })
+            }),
+            invalidatesTags : ['donors']
         }),
         registerVolunteers : builder.mutation({
             query: (body) => ({

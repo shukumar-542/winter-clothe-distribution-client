@@ -34,7 +34,7 @@ const CreateTestimonial = () => {
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 px-1 ">
                 {
-                    data?.map((testi : any) => <Testimonial key={testi._id} testimonials={testi} />)
+                    data?.map((testi : any) => <Testimonial key={testi?._id} testimonials={testi} />)
                 }
             </div>
 
