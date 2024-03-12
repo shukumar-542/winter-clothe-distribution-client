@@ -27,16 +27,16 @@ const Gallery = () => {
         }
     };
     return (
-        <Container className="my-20">
+        <Container className="my-20 mx-8">
             <div className="lg:flex justify-between items-center">
                 <h1 className="font-semibold text-[20px] text-center mb-5 lg:text-[48px] uppercase">Our Clothe Distribution</h1>
 
             </div>
             <div className='relative'>
-                    <div onClick={handleLeftBtn} className="bg-black/55 hover:bg-black/65 cursor-pointer p-3 rounded-full absolute left-[-20px] top-1/2">
+                    <div onClick={handleLeftBtn} className="bg-black/55 hover:bg-black/65 cursor-pointer p-1 lg:p-3 rounded-full absolute left-[-20px] top-1/2">
                         <ArrowLeft strokeWidth={4} className='text-white' />
                     </div>
-                    <div onClick={handleRightBtn} className="bg-black/55 hover:bg-black/65 cursor-pointer p-3 rounded-full absolute right-[-20px] top-1/2">
+                    <div onClick={handleRightBtn} className="bg-black/55 hover:bg-black/65 cursor-pointer p-1 lg:p-3 rounded-full absolute right-[-20px] top-1/2">
                         <ArrowRight strokeWidth={4} className='text-white' />
                     </div>
                 <div className="flex scroll-m-1 scroll-smooth overflow-hidden gap-5" id="clientContainer">
