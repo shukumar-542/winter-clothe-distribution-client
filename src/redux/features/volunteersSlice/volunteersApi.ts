@@ -18,10 +18,13 @@ const volunteersApi = baseApi.injectEndpoints({
                 url: '/volunteers',
                 method: "POST",
                 body: body
-            })
+            }),
+            invalidatesTags : ['volunteers']
+
         }),
         getVolunteers: builder.query({
-            query: () => `/volunteers`
+            query: () => `/volunteers`,
+            providesTags : ['volunteers']
         }),
     })
 })
