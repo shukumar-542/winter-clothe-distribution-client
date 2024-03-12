@@ -14,11 +14,11 @@ const LeaderBoard = () => {
     const result = CountProductAdded(data)
 
     return (
-        <div className=" mb-10">
+        <div className=" mb-10 px-2">
             <Container >
                 <h1 className="text-center font-bold text-2xl pt-5">Top Contributor Leader board</h1>
 
-                <div className="grid grid-cols-3 gap-5 mt-5">
+                <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 mt-5 ">
                     <div className="bg-gray-800 shadow-md text-gray-200 px-5 py-8 rounded-md">
                         <div className="flex justify-between items-center">
                             <div>
@@ -138,36 +138,38 @@ const LeaderBoard = () => {
                 </div>
 
 
-                <table className="w-full mt-5 items-center h-full rounded-md">
-                    <thead className="bg-gray-800 shadow-md border-b border-gray-400 text-gray-200 rounded-md ">
-                        <tr>
-                            <th className="py-5">Place</th>
-                            <th>Name</th>
-                            <th>Sweeter</th>
-                            <th>Gloves</th>
-                            <th>Jacket</th>
-                            <th>Total Product</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        
-                        {
-                            result?.map((user, i) => (
-                                <tr key={i} className="text-center border-b border-gray-400 bg-gray-800 text-white">
-                                    <td className="py-4 ">{i+1}</td>
-                                    <td>{user?.name}</td>
-                                    <td>{user?.sweaters}</td>
-                                    <td>{user?.gloves}</td>
-                                    <td>{user?.jackets}</td>
-                                    <td>{user?.totalProducts}</td>
+                <div className="overflow-x-auto my-10">
+                    <table className="min-w-full divide-y divide-gray-200">
+                        <thead className="bg-gray-800 shadow-md border-b border-gray-400 text-gray-200 rounded-md  ">
+                            <tr>
+                                <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Place</th>
+                                <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Name</th>
+                                <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Sweeter</th>
+                                <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Gloves</th>
+                                <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Jacket</th>
+                                <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Total Product</th>
+                            </tr>
+                        </thead>
+                        <tbody>
 
-                                </tr>
-                            ))
-                        }
+                            {
+                                result?.map((user, i) => (
+                                    <tr key={i} className=" border-b border-gray-400 bg-gray-800 text-white">
+                                        <td className="px-6 py-4 whitespace-nowrap">{i + 1}</td>
+                                        <td className="px-6 py-4 whitespace-nowrap">{user?.name}</td>
+                                        <td className="px-6 py-4 whitespace-nowrap">{user?.sweaters}</td>
+                                        <td className="px-6 py-4 whitespace-nowrap">{user?.gloves}</td>
+                                        <td className="px-6 py-4 whitespace-nowrap">{user?.jackets}</td>
+                                        <td className="px-6 py-4 whitespace-nowrap">{user?.totalProducts}</td>
+
+                                    </tr>
+                                ))
+                            }
 
 
-                    </tbody>
-                </table>
+                        </tbody>
+                    </table>
+                </div>
 
 
             </Container>

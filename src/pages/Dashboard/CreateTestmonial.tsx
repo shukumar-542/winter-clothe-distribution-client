@@ -32,7 +32,7 @@ const CreateTestimonial = () => {
 
                 <button onClick={handleTestimonial} className="p-4 py-2 font-semibold shadow-md  uppercase cursor-pointer hover:bg-slate-200 transition-all text-center rounded-md bg-gradient-to-r from-sky-400 to-fuchsia-600 text-white">Add Testimonials</button>
             </div>
-            <div className="grid grid-cols-3 gap-5 ">
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 px-1 ">
                 {
                     data?.map((testi : any) => <Testimonial key={testi._id} testimonials={testi} />)
                 }

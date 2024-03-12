@@ -35,8 +35,8 @@ const CreateVolunteers = () => {
     }
     return (
         <div className="bg-gray-100 h-full flex items-center py-10 ">
-            <div className="bg-white w-1/2 mx-auto p-10 shadow-md rounded-md">
-                <h1 className="text-center font-bold  text-3xl mb-5">Register as Volunteers</h1>
+            <div className="bg-white w-3/4 lg:w-1/2 mx-auto p-10 shadow-md rounded-md">
+                <h1 className="text-center font-bold  lg:text-3xl mb-5">Register as Volunteers</h1>
                 <div className="max-w-2xl ">
                     <form action="" onSubmit={handleSubmit(onSubmit)}>
                         <div className="flex flex-col space-y-2 w-full">
